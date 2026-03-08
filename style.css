@@ -207,6 +207,7 @@ h1{
 
 .cntct-btn{
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .cntct-btn:hover{
