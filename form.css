@@ -1,0 +1,246 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-color: rgb(245, 207, 214); */
+    background-color: rgb(243, 214, 220);
+}
+
+h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav{
+    background-color: rgb(255, 174, 201);
+}
+
+.logo{
+    position: relative;
+    right: 220px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    animation: slide 1s ease-in forwards;
+}
+.web-logo:hover{
+       color: rgb(241, 7, 151);
+}
+@keyframes slide {
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.logo-img{
+    position: relative;
+    left: 10px;
+}
+
+.nav-links{
+    position: relative;
+    right: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+.nav-links a:hover{
+       color: rgb(241, 7, 151);
+}
+
+.order-btn{
+    position: relative;
+    left: 150px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.order-btn:hover{
+    background-color: rgb(253, 138, 176);
+    color: white;
+}
+
+.card{
+    border-radius: 20px;
+    box-shadow: 2px 10px 15px 2px rgb(207, 205, 205);
+}
+
+.product{
+    height: 500px;
+    margin: auto;
+}
+
+.qnt-box{
+    position: relative;
+    left: 190px;
+    top: 8px;
+}
+
+.qnt{
+    position: relative;
+    left: 180px;
+    top: 20px;
+}
+
+.radio-btn{
+    accent-color: rgb(230, 111, 159);
+}
+
+.btn{
+    border-radius: 10px;
+    width: 250px;
+    margin: auto;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(241, 7, 151);
+    border: 2px solid rgb(241, 7, 151);
+    font-weight: bold;
+
+}
+
+/* Hero Section & Navbar Responsive */
+/* Tablet screens */
+@media (max-width: 1024px) {
+    .logo {
+        right: 0 !important;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        margin-right: 30;
+    }
+
+    .logo-img {
+        left: 30px !important;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        right: 0 !important;
+    }
+
+    .order-btn {
+        position: relative !important;
+        left: 0 !important;
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .logo span {
+        font-size: 2rem !important;
+    }
+
+    .order-btn {
+        padding: 8px 12px !important;
+        font-size: 14px !important;
+    }
+
+    .nav-links a {
+        font-size: 16px !important;
+        padding: 6px 0 !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .logo span {
+        font-size: 1.8rem !important;
+    }
+
+    .order-btn {
+        padding: 6px 10px !important;
+        font-size: 13px !important;
+    }
+
+    .nav-links a {
+        font-size: 14px !important;
+        padding: 4px 0 !important;
+    }
+}
+
+/* card responsive  */
+/* Tablet screens */
+@media (max-width: 1024px){
+
+.product{
+    height: 350px;
+    margin-right: 300px;
+}
+
+.qnt{
+    margin-left: 200px;
+    margin-top: 20px;
+
+}
+
+.qnt-box{
+    /* left: 130px; */
+    margin-top: 10px;
+}
+
+.btn{
+    width: 200px;
+}
+
+}
+
+
+/* Mobile screens */
+@media (max-width: 768px){
+
+.card{
+    flex-direction: column;
+    padding: 20px;
+}
+
+.product{
+    height: 300px;
+    width: 100%;
+}
+
+.qnt{
+    left: 0;
+    top: 0;
+}
+
+.qnt-box{
+    left: 10px;
+    top: 0;
+}
+
+.btn{
+    width: 100%;
+}
+
+}
+
+
+/* Small mobile */
+@media (max-width: 480px){
+
+.product{
+    height: 250px;
+}
+
+.qnt{
+    font-size: 16px;
+}
+
+.qnt-box{
+    width: 60px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+}
+
